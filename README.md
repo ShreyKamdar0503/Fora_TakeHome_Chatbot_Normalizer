@@ -63,11 +63,25 @@ http://localhost:8000
 
 ## Public Endpoint (ngrok)
 
-This instance is currently accessible at:
+This project uses **ngrok** to expose the local FastAPI server to the internet.
+The public endpoint URL is generated dynamically **each time you run ngrok**, so it is **not included here**.
 
-```
-https://605ecb13da58.ngrok-free.app/normalize
-```
+To get your own public URL:
+
+1. Start the FastAPI server locally:
+
+   ```bash
+   uvicorn app:app --reload --port 8000
+   ```
+2. In a separate terminal, run:
+
+   ```bash
+   ngrok http 8000
+   ```
+3. ngrok will display a **Forwarding URL** (e.g., `https://abcd1234.ngrok-free.app`).
+   This is your temporary public endpoint for `/normalize`.
+
+**Note:** The URL will expire when you stop ngrok or restart it. For a permanent URL, deploy to a cloud service such as Render or Railway.
 
 ---
 
