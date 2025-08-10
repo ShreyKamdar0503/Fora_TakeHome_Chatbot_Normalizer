@@ -45,6 +45,10 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Loom Video - 
+
+https://www.loom.com/share/5cd3076d053f4730a94ba12e3d214c96?sid=fbec2e3a-2cb3-4764-9588-699bb2158ee2  
+
 ---
 
 ## Run locally
